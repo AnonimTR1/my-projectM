@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minnoş Sayfası</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #imageContainer {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Minnoş Sayfasına Hoş Geldin!</h1>
+    <button id="minnosButton">Tıklasana Minnoş</button>
+
+    <div id="imageContainer">
+        <img src="minnoşlar/MİNNOŞ.jpg" alt="Minnoş Resmi" id="minnosImage">
+        <audio id="backgroundMusic" src="fart-9-228245.mp3" preload="auto"></audio>
+    </div>
+
+    <script>
+        document.getElementById('minnosButton').onclick = function() {
+            document.getElementById('imageContainer').style.display = 'block';
+            document.getElementById('backgroundMusic').play();
+        };
+    </script>
+
+</body>
+</html>
